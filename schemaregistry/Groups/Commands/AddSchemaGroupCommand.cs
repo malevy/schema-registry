@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Ardalis.GuardClauses;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using SchemaRegistry.Helpers;
 using SchemaRegistry.Repository;
 using SchemaRegistry.Repository.DTO;
 
@@ -54,8 +56,9 @@ namespace schemaregistry.Groups.Commands
                         p => p.Key, 
                         p => p.Value)
                 };
+                groupDTO.CreatedTimeUTC = DateTime.UtcNow.To8601String();
+                groupDTO.UpdatedTimeUTC = groupDTO.CreatedTimeUTC;
                 
-                // TODO - catch exception for duplicate group
                 await this._schemaRepository.Groups.AddAsync(groupDTO);
 
                 return Unit.Value;

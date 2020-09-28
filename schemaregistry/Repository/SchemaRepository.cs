@@ -24,9 +24,6 @@ namespace SchemaRegistry.Repository
         /// The schema groups that have been registered
         /// </summary>
         public ISchemaGroupsCollection Groups { get; private set; }
-
-        public static string UTCDateTimeAsString(DateTime d) => d.ToString("s", CultureInfo.InvariantCulture);
-        public static string UTCDateTimeAsString() => UTCDateTimeAsString(DateTime.UtcNow);
     }
     
     public class SchemaGroupCollection : ISchemaGroupsCollection
@@ -50,8 +47,6 @@ namespace SchemaRegistry.Repository
         /// <exception cref="ConstraintException">Thrown if a schema group with the given ID is already registered</exception>
         public Task AddAsync(SchemaGroupDTO @group)
         {
-            @group.CreatedTimeUTC = SchemaRepository.UTCDateTimeAsString();
-            @group.UpdatedTimeUTC = @group.CreatedTimeUTC;
             if (!_store.TryAdd(@group.ID, @group))
             {
                 throw new ConstraintException($"A schema group identified as '{@group.ID}' already exists");
