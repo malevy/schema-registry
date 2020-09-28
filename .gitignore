@@ -450,7 +450,7 @@ riderModule.iml
 *.iws
 
 # Editor-based Rest Client
-.idea/httpRequests
+.idea/**/httpRequests
 
 ##
 ## Visual Studio Code
