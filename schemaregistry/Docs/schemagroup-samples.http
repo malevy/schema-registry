@@ -1,0 +1,20 @@
+﻿
+GET https://localhost:5001/schemagroups
+Accept: application/json
+
+###
+GET https://localhost:5001/schemagroups/test
+Accept: application/json
+
+###
+PUT https://localhost:5001/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+DELETE https://localhost:5001/schemagroups/test
+

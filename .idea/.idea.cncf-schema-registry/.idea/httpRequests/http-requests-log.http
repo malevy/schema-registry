@@ -1,0 +1,399 @@
+﻿GET https://localhost:5001/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T111001.404.json
+
+###
+
+DELETE https://localhost:5001/schemagroups/test
+
+###
+
+GET https://localhost:5001/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T110909.200.json
+
+###
+
+PUT https://localhost:5001/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+GET https://localhost:5001/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T110853.404.json
+
+###
+
+PUT https://localhost:5001/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+PUT https://localhost:5001/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+<> 2020-09-27T110009.500.txt
+
+###
+
+PUT https://localhost:5001/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+<> 2020-09-27T105105.500.txt
+
+###
+
+PUT https://localhost:5001/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+<> 2020-09-27T104941.500.txt
+
+###
+
+GET https://localhost:5001/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T104937.404.json
+
+###
+
+GET https://localhost:5001/schemagroups
+Accept: application/json
+
+<> 2020-09-27T104932.200.json
+
+###
+
+PUT https://localhost:5001/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+<> 2020-09-27T103443.500.txt
+
+###
+
+PUT https://localhost:5001/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+<> 2020-09-27T102642.500.txt
+
+###
+
+GET https://localhost:5001/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T102528.404.json
+
+###
+
+GET https://localhost:5001/schemagroups
+Accept: application/json
+
+<> 2020-09-27T102519.200.json
+
+###
+
+DELETE http://localhost:5000/schemagroups/test
+
+###
+
+GET http://localhost:5000/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T102332.404.json
+
+###
+
+GET http://localhost:5000/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T102244.404.json
+
+###
+
+GET http://localhost:5000/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T102216.404.json
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+GET http://localhost:5000/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T093031.404.json
+
+###
+
+GET http://localhost:5000/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T093010.404.json
+
+###
+
+DELETE http://localhost:5000/schemagroups/test
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+GET http://localhost:5000/schemagroups
+Accept: application/json
+
+<> 2020-09-27T092811.200.json
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+GET http://localhost:5000/schemagroups
+Accept: application/json
+
+<> 2020-09-27T092554.200.json
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+GET http://localhost:5000/schemagroups
+Accept: application/json
+
+<> 2020-09-27T092129.200.json
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+GET http://localhost:5000/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T092033.404.json
+
+###
+
+DELETE http://localhost:5000/schemagroups/test
+
+###
+
+GET http://localhost:5000/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T062503.404.json
+
+###
+
+PUT http://localhost:5000/schemagroups/test
+Accept: application/json
+Content-Type: application/json
+
+{
+ "description": "a test schema group"
+}
+
+###
+
+GET http://localhost:5000/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T062203.404.json
+
+###
+
+GET http://localhost:5000/schemagroups
+Accept: application/json
+
+<> 2020-09-27T062159.200.json
+
+###
+
+GET http://localhost:5000/schemagroups/test
+Accept: application/json
+
+<> 2020-09-27T060538.500.txt
+
+###
+
+GET http://localhost:5000/schemagroups
+Accept: application/json
+
+<> 2020-09-27T060503.200.json
+
+###
+
+GET Http://localhost:5000/schemagroups
+Accept: application/json
+Host: Http://localhost:5000
+
+###
+
+GET Http://localhost:5000/schemagroups/test
+Accept: application/json
+Host: Http://localhost:5000
+
+###
+
+GET Http://localhost:5000/schemagroups
+Accept: application/json
+Host: Http://localhost:5000
+
+###
+
+GET Http://localhost:5000/schemagroups/test
+Accept: application/json
+Host: Http://localhost:5000
+
+###
+
+GET Http://localhost:5000/schemagroups
+Accept: application/json
+Host: Http://localhost:5000
+
+###
+
+GET Http://localhost:5000/schemagroups
+Accept: application/json
+Host: Http://localhost:5000
+
+###
+
