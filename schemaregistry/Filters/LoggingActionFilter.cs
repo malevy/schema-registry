@@ -16,14 +16,14 @@ namespace SchemaRegistry.Filters
         {
             base.OnActionExecuting(context);
             var descriptor = context.ActionDescriptor.DisplayName;
-            _logger.LogDebug($"{descriptor} is being executed");
+            _logger.LogInformation($"{descriptor} is being executed");
         }
 
         public override void OnActionExecuted(ActionExecutedContext context)
         {
             base.OnActionExecuted(context);
             var descriptor = context.ActionDescriptor.DisplayName;
-            _logger.LogDebug($"{descriptor} completed");
+            _logger.LogInformation($"{descriptor} completed");
         }
     }
 }

@@ -10,5 +10,10 @@
       <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Schemas\Commands" />
+      <Folder Include="Schemas\Messages" />
+    </ItemGroup>
+
 
 </Project>

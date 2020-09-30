@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SchemaRegistry.Filters;
 using schemaregistry.Groups.Commands;
 using schemaregistry.Groups.Messages;
 
 namespace schemaregistry.Groups
 {
     [ApiController]
+    [ServiceFilter(typeof(LoggingActionFilter))]
     [Route("[controller]")]
     public class SchemaGroupsController : ControllerBase
     {
