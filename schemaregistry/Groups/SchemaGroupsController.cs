@@ -13,7 +13,7 @@ namespace schemaregistry.Groups
 {
     [ApiController]
     [ServiceFilter(typeof(LoggingActionFilter))]
-    [Route("[controller]")]
+    [Route("schemagroups")]
     public class SchemaGroupsController : ControllerBase
     {
         private readonly ILogger<SchemaGroupsController> _logger;

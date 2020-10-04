@@ -11,7 +11,7 @@ namespace SchemaRegistry.Schemas
 {
     [ApiController]
     [ServiceFilter(typeof(LoggingActionFilter))]
-    [Route("schemagroups")]
+    [Route("schemagroups/{groupId}/schemas")]
     public class SchemaController : ControllerBase
     {
         private readonly ILogger<SchemaController> _logger;
@@ -32,7 +32,7 @@ namespace SchemaRegistry.Schemas
         /// 200 OK - the list of schemas for the given group
         /// 404 NOT FOUND - group not found
         /// </returns>
-        [HttpGet("{groupId}/schemas")]
+        [HttpGet]
         public async Task<IActionResult> GetSchemasByGroup(string groupId)
         {
             var command = new GetSchemasForGroupCommand.Command()
@@ -59,7 +59,7 @@ namespace SchemaRegistry.Schemas
         /// 204 NO CONTENT - schemas successfully removed
         /// 404 NOT FOUND - group not found
         /// </returns>
-        [HttpDelete("{groupId}/schemas")]
+        [HttpDelete]
         public async Task<IActionResult> DeleteAllSchemasByGroup(string groupId)
         {
             var command = new DeleteAllSchemasByGroupCommand.Command()
